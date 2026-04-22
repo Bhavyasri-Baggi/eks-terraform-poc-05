@@ -16,6 +16,11 @@ module "eks" {
   eks_managed_node_groups = {
     default = {
       instance_types = ["t3.medium"]
+
+      ami_type       = "AL2_x86_64"
+      capacity_type  = "ON_DEMAND"
+
+
       desired_size   = 1
       min_size       = 1
       max_size       = 2
