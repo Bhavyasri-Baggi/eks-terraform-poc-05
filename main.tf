@@ -3,7 +3,7 @@ module "eks" {
   version = "~> 20.0"
 
   cluster_name    = "demo-eks"
-  cluster_version = "1.28"
+  cluster_version = "1.30"
 
   vpc_id = "vpc-02a998371885782dc"
 
