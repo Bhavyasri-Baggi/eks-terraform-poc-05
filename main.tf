@@ -12,6 +12,8 @@ module "eks" {
     "subnet-0315b09c5f5c529b0",
     "subnet-09888a606d4a7fe2e"
   ]
+  cluster_endpoint_public_access  = true  
+  cluster_endpoint_private_access = true
 
   eks_managed_node_groups = {
     default = {
